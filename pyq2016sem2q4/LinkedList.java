@@ -30,6 +30,7 @@ public class LinkedList {
             tail.next = newNode;
             tail = newNode;
         }
+        size++;
         
     }
     
@@ -65,6 +66,7 @@ public class LinkedList {
         head = head.next;
         if(head == null){
             tail = null;
+            size--;
         }
         return deleteNode.data;
     }
